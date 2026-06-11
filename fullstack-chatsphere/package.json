@@ -1,0 +1,28 @@
+{
+  "name": "chatsphere-app",
+  "version": "1.0.0",
+  "description": "ChatSphere - Real-time team chat application",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "concurrently \"node src/server.js\" \"vite --port 5008\"",
+    "build": "vite build",
+    "preview": "node src/server.js",
+    "start": "node src/server.js",
+    "seed": "node src/seed.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.16.0",
+    "sql.js": "^1.9.0",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "uuid": "^9.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.8",
+    "concurrently": "^9.1.0"
+  }
+}
